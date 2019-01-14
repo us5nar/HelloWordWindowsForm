@@ -16,5 +16,17 @@ namespace HelloWordWindowsForms
         {
             InitializeComponent();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Random chaosRnd = new Random();
+            int randomInt = chaosRnd.Next(1000);
+            label1.Text = randomInt.ToString();
+        }
     }
 }
