@@ -80,16 +80,22 @@
             // 
             // panel1
             // 
+            this.panel1.AutoSize = true;
+            this.panel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.panel1.Controls.Add(this.label2);
             this.panel1.Location = new System.Drawing.Point(6, 11);
+            this.panel1.MinimumSize = new System.Drawing.Size(240, 40);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(240, 35);
+            this.panel1.Size = new System.Drawing.Size(240, 40);
             this.panel1.TabIndex = 4;
             // 
             // panel2
             // 
+            this.panel2.AutoScroll = true;
+            this.panel2.AutoSize = true;
             this.panel2.Controls.Add(this.label1);
             this.panel2.Location = new System.Drawing.Point(6, 52);
+            this.panel2.MinimumSize = new System.Drawing.Size(240, 40);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(240, 40);
             this.panel2.TabIndex = 5;
@@ -129,6 +135,7 @@
             this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 

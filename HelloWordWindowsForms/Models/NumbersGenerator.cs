@@ -8,5 +8,10 @@ namespace HelloWordWindowsForms.Models
 {
     class NumbersGenerator
     {
+        public int Generate(int range)
+        {
+            return 
+        }
+
     }
 }
