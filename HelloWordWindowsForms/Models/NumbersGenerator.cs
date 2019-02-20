@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace HelloWordWindowsForms.Models
 {
@@ -10,7 +6,9 @@ namespace HelloWordWindowsForms.Models
     {
         public int Generate(int range)
         {
-            return 
+            Random chaosRnd = new Random();
+            int randomInt = chaosRnd.Next(range);
+            return randomInt;
         }
 
     }
