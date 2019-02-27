@@ -6,9 +6,9 @@ namespace HelloWordWindowsForms.Models
     {
         public int Generate(int range)
         {
-            Random chaosRnd = new Random();
-            int randomInt = chaosRnd.Next(range);
-            return randomInt;
+            Random newRandomNmber = new Random();
+            int number = newRandomNmber.Next(range);
+            return number;
         }
 
     }
