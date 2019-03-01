@@ -10,6 +10,5 @@ namespace HelloWordWindowsForms.Models
             int number = newRandomNmber.Next(range);
             return number;
         }
-
     }
 }
