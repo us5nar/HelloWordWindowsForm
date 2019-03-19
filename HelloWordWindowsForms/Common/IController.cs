@@ -8,6 +8,6 @@ namespace HelloWordWindowsForms.Common
 {
     interface IController
     {
-        int GenerateRandomValue();
+        int GenerateRandomValue(); 
     }
 }
