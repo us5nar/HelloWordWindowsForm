@@ -18,7 +18,6 @@ namespace MVCTest
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new Form1());
-
             // Create the View, Model and Controller object yourself and comment out the Application.Run with a new form
             // Create a controller object with the concreate implementation IncController and pass the view and model.
             // Controller will store its associated model and view inside the constructor
