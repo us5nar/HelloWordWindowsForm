@@ -5,10 +5,10 @@ using System.Text;
 
 namespace MVCTest
 {
-    // The Icontroller supports only one functionality that is to increment the value
+    // The Icontroller supports only one functionality that is to IncrementValue the value
     public interface IController
     {
-        void incvalue();
+        void IncValue();
     }
 
 }

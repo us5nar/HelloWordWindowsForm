@@ -10,7 +10,7 @@ namespace MVCTest
         // it is tied. The rest of the view related code is implemented in the form.
         public interface IView
         {
-            event ViewHandler<IView> changed;
-            void setController(IController cont);
+            event ViewHandler<IView> Changed;
+            void SetController(IController cont);
         }
 }

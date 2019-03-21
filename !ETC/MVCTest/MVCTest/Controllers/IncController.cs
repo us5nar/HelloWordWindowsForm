@@ -19,22 +19,21 @@ namespace MVCTest.Controllers
         {
             view = v;
             model = m;
-            view.setController(this);
-            model.attach((IModelObserver)view);
-            view.changed += new ViewHandler<IView>(this.view_changed);
+            view.SetController(this);
+            model.Attach((IModelObserver)view);
+            view.Changed += new ViewHandler<IView>(this.ViewChanged);
         }
 
         // event which gets fired from the view when the users changes the value
-        public void view_changed(IView v, ViewEventArgs e)
+        public void ViewChanged(IView v, ViewEventArgs e)
         {
-            model.setvalue(e.value);
+            model.SetValue(e.value);
         }
 
         // This does the actual work of getting the model do the work
-        public void incvalue()
+        public void IncValue()
         {
-            model.increment();
+            model.IncrementValue();
         }
-
     }
 }

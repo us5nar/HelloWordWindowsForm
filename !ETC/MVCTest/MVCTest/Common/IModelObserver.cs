@@ -10,6 +10,6 @@ namespace MVCTest.Common
     // fired when a value is changed in the model.
     public interface IModelObserver
     {
-        void valueIncremented(IModel model, ModelEventArgs e);
+        void ValueIncremented(IModel model, ModelEventArgs e);
     }
 }

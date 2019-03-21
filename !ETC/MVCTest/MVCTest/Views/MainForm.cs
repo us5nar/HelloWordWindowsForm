@@ -16,29 +16,29 @@ namespace MVCTest
     // so that, it can invoke the valueIncremented function which is the implementation
     // Form also implements the IView interface to send the view changed event and to
     // set the controller associated with the view
-    public partial class Form1 : Form, IView, IModelObserver
+    public partial class MainForm : Form, IView, IModelObserver
     {
         IController controller;
-        public event ViewHandler<IView> changed;
+        public event ViewHandler<IView> Changed;
         // View will set the associated controller, this is how view is linked to the controller.
-        public void setController(IController cont)
+        public void SetController(IController cont)
         {
             controller = cont;
         }
-        public Form1()
+        public MainForm()
         {
             InitializeComponent();
         }
-        // when the user clicks the button just ask the controller to increment the value
+        // when the user clicks the button just ask the controller to IncrementValue the value
         // do not worry about how and where it is done
         private void button1_Click(object sender, EventArgs e)
         {
-            controller.incvalue();
+            controller.IncValue();
         }
         // This event is implementation from IModelObserver which will be invoked by the
         // Model when there is a change in the value with ModelEventArgs which is derived
         // from the EventArgs. The IModel object is the one from which invoked this.
-        public void valueIncremented(IModel m, ModelEventArgs e)
+        public void ValueIncremented(IModel m, ModelEventArgs e)
         {
             textBox1.Text = "" + e.newval;
         }
@@ -50,7 +50,7 @@ namespace MVCTest
         {
             try
             {
-                changed.Invoke(this, new ViewEventArgs(int.Parse(textBox1.Text)));
+                Changed.Invoke(this, new ViewEventArgs(int.Parse(textBox1.Text)));
             }
             catch (Exception)
             {

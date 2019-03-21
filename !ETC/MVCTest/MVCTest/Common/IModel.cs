@@ -7,14 +7,14 @@ using MVCTest.Common;
 namespace MVCTest
 {
     
-    // The Model interface where we can attach the function to be notified when value
-    // is changed. An actual data manipulation function increment which increments the value
-    // A setvalue function which sets the value when users changes the textbox
+    // The Model interface where we can Attach the function to be notified when value
+    // is changed. An actual data manipulation function IncrementValue which increments the value
+    // A SetValue function which sets the value when users changes the textbox
     public interface IModel
     {
-        void attach(IModelObserver imo);
-        void increment();
-        void setvalue(int v);
+        void Attach(IModelObserver imo);
+        void IncrementValue();
+        void SetValue(int v);
     }
 
 }

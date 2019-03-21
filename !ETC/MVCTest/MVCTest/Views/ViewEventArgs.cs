@@ -14,5 +14,4 @@ namespace MVCTest.Views
         public int value;
         public ViewEventArgs(int v) { value = v; }
     }
-
 }
